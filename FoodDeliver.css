@@ -1,0 +1,578 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+body{
+  /* overflow-x: hidden; */
+  height: 100vh;
+  display: block;
+  width: 100vw;
+  /* overflow-y: hidden; */
+}
+
+#navbar ul li a{
+  display: block;
+  font-family: fantasy;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+
+#navbar::before{
+  content:"";
+  background-color: lightgray;
+  position: absolute;
+  height: 100%;
+  width:100%;
+  opacity: 0.4;
+  z-index:-1;
+}
+
+#navbar{
+  min-height: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/*Navbar: logo and image*/
+#myFood{
+  margin: 3px 5px;
+}
+
+/*Navbar: list and styling*/
+#myFood img{
+  align-items: center;
+  height: 0.6px;
+  margin: 10px 34px;
+}
+
+#navbar img{
+  height: 50px;
+  width:80px;
+}
+
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#home {
+  margin-top: 1.5rem;
+  word-break: keep-all;
+}
+
+#navbar ul li a:hover{
+  display: block;
+  color:white;
+  border-radius: 0.5rem;
+  background-color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+#navbar ul{
+   display: flex;
+}
+
+/* Home section*/
+#home{
+  display:flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  align-items: center;
+  justify-content: center;
+  height:267px;
+}
+
+body{
+  position: absolute;
+}
+
+#home p{
+  margin-top: 0.5rem;
+  line-height: 1.2rem;
+}
+
+#home .btn:hover{
+  margin-top: 1.4rem;
+  display:flex;
+  flex-direction: column;
+  background-color: #99DDCC;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .para1{
+  word-spacing: 0.8rem;
+  font-family: 'Irish Grover', cursive;
+  font-size: 1.1rem;
+  color: #3F3351;
+  line-height: 1.2rem;
+}
+
+#home::before{
+  content:"";
+  margin: 0 0;
+  margin-top: 75px;
+  background: url("E:/WebDev/FoodDelivery/Capsicum.jpg") no-repeat center center;
+  background-size: 1350px 400px;
+  position: absolute;
+  height: 100vh;
+  width:100vw;
+  opacity: 0.4;
+  z-index:-1;
+}
+
+/*Utility class*/
+#home h1{
+  text-align: center;
+  color: #1F1D36;
+  justify-content: center;
+}
+
+.primary{
+  padding: 12px; /*padding from all direx*/
+  font-size: 1.8rem;
+  font-family: monospace ;
+  font-stretch: expanded;
+  font-weight: bolder;
+}
+
+.btn{
+  padding: 7px;
+  border-radius: 20px ;
+  border: 2px white;
+  color: #FF5DA2;
+  background-color: #FFF9B6;
+  margin: 16px;
+  cursor:pointer;
+  font-size: 1.3rem;
+}
+
+.my-heading{
+  font-size: 3.0rem;
+  padding: 14px;
+}
+
+.box .img{
+  height: 200px;
+  margin:auto;
+  display: block;
+  margin-top: 10px;
+  align-items: baseline;
+}
+
+/* .fb,.wapp,.inst,.twit{
+  width: 32px;
+  height: 32px;
+  //position: fixed;
+  padding: 22px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.fb{
+  background: url("fb.png") no-repeat;
+}
+
+.wapp{
+  background: url("whatsapp.png") no-repeat;
+}
+
+.inst{
+  background: url("inst.png") no-repeat;
+}
+
+.twit{
+  background-image: url("tweet.png")
+} */
+
+.box .my-subhead{
+  text-align: center;
+}
+
+.service-container .my-heading{
+  text-align: center;
+  margin-top:170px;
+  font-size: 1.8rem;
+  font-family: 'Irish Grover', cursive;
+  justify-content: center;
+}
+
+.service-container {
+  margin-left: 40px;
+}
+
+.partners{
+  padding: 20px;
+}
+
+.service {
+  margin-top: 0px;
+  display: flex;
+  padding: 20px;
+}
+
+.main-sec{
+  display: flex;
+}
+
+.service .box .para{
+  font-family: sans-serif;
+  font-weight: auto;
+  font-family: 'Irish Grover', cursive;
+  font-size: .8rem;
+  text-align: center;
+  line-height: 1.6rem;
+  justify-content:center;
+}
+
+.service .box{
+  border-radius: 20px ;
+  border: 2px solid red;
+  height: 320px;
+  top: 200px;
+  margin: 30px;
+  background-color: #FED2AA;
+  width:350px;
+}
+
+/* Client Section */
+.client-sec .primary{
+  bottom: 220px;
+  font-family: 'Irish Grover', cursive;
+  justify-content: center;
+  text-align: center;
+  margin-top:50px;
+}
+
+.client-sec .partners{
+  align-items: center;
+  margin-left: 5px;
+  justify-content: center;
+}
+
+.partners .p1{
+   /* margin-right: 200px; */
+}
+
+/* .partners {
+  background: url(Bg.jpg) no-repeat;
+  background-size: auto;
+} */
+
+.partners .part1{
+ margin-right: 700px;
+}
+
+.client-sec .partners .part1,.part2,.part3{
+  border: 2.5px solid red;
+  border-radius: 7px;
+  font-family: 'Irish Grover', cursive;
+  margin:20px;
+}
+
+.service::before{
+  content: "";
+  position: absolute;
+  background: url("E:/WebDev/FoodDelivery/Bg.jpg") no-repeat center center;
+  width: 100vw;
+  margin-left: -80px;
+  height:125%;
+  /* it work for setting background for me, for delivery partners */
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.partners .dp1,.dp2,.dp3{
+  text-align: center;
+  padding: 10px;
+}
+
+/*In order To center a form */
+.fillform{
+  /* Or form */
+  width:250px;
+  margin: 0 auto;
+}
+
+.fillform::before{
+  content: "";
+  position: absolute;
+  //background: url("form.jpg") no-repeat center center;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  height: 40%;
+}
+
+
+/* fieldset form outline */
+.setfield{
+  border: 4px dashed #630000;
+  height: 350px;
+  color: #483434;
+  border-radius: 15px;
+  width: 430px;
+}
+
+
+#contact-us::before{
+   content: "";
+   background: url("Msg.jpg") no-repeat center center;
+   width: 100%;
+   justify-content:center;
+   position: absolute;
+   bottom:  -93.2rem;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+
+#contact-us .dfn-head{
+  text-align: center;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-top: 20px
+}
+
+hr.line1{
+  border: 2px dashed black;
+  margin-top: 180px;
+}
+
+hr.line2{
+  border: 2px dashed black;
+  margin-top: 40px;
+}
+
+.part3 .p3{
+  height: 20%;
+  width: 90%;
+}
+.client-sec .partners{
+  display: flex;
+}
+
+/* set label tag */
+label{
+  font-size:1.5rem;
+  margin:1.2rem;
+  display: inline-block;
+  height:0.8rem;
+  font-family: 'Irish Grover', cursive;
+  color: #105652;
+}
+
+/* Align all input element so that all start from the same position */
+
+input{
+  width: 190px;
+  height: 23px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+
+/* Button Style */
+
+.setfield input[type="submit"]:hover{
+  background-color: orange;
+}
+
+input[type="submit"]{
+    font-size: 1.8rem;
+    height: 55px;
+    border-radius: 24px;
+    color: white;
+    background-color: #C85C5C;
+    margin-left: 140px;
+    margin-top: 40px;
+    width: 135px;
+    border: white;
+}
+
+
+/* legend tag */
+.setfield .legend{
+    font-size: 1.6rem;
+    background-color: #D8B6A4;
+    color: white;
+    border-radius:  24px;
+    border: 2px dashed #C85C5C;
+    margin-left: 20px;
+}
+
+/* social media icon */
+
+ul {
+  list-style-type: none;
+}
+
+.smedia-icon{
+  position: fixed;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+}
+
+.smedia-icon a{
+  text-decoration: none;
+  width: 120px;
+  display: block;
+  margin-bottom: 2px;
+  padding: 0.2rem;
+  align-items: center;
+  font-size: 0.9rem;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+.smedia-icon a i{
+  padding-left: 5px;
+  height: 20px;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+    from{
+      transform: scale(0.8);
+    }
+    to{
+      transform: scale(1.1);
+    }
+}
+
+.smedia-icon a span{
+  font-family: 'Irish Grover', cursive;
+}
+
+.smedia-icon li:nth-child(1) a{
+    background: #1877F2;
+    transform: translateX(-81px);
+    color: #fff;
+}
+
+.smedia-icon li:nth-child(2) a{
+    background: #CD201F;
+    transform: translateX(-81px);
+    color:#fff;
+}
+
+.smedia-icon li:nth-child(3) a{
+    background: #0A66C2;
+    transform: translateX(-81px);
+    color:#fff;
+}
+
+.smedia-icon li:nth-child(4) a{
+    background: #0A66C2;
+    transform: translateX(-81px);
+    color:#fff;
+}
+
+.smedia-icon li:nth-child(5) a{
+    background: #DF2029;
+    width: 133.3px;
+    transform: translateX(-94px);
+    color:#fff;
+}
+
+.smedia-icon li:nth-child(6) a{
+    background: #09B83E;
+    width: 124.3px;
+    transform: translateX(-84.5px);
+    color: #fff;
+}
+
+.smedia-icon li a:hover{
+   transform: translateX(0px);
+}
+
+/* footer design */
+.footer{
+  background-color: black;
+  padding: 70px;
+  margin-top: 29px;
+}
+
+.container{
+  max-width: 1175px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 30%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  color: white;
+  font-family: 'Irish Grover', cursive;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-col h4::before{
+ content: '';
+ position: absolute;
+ height: 2px;
+ bottom: -2px;
+box-sizing: border-box;
+ width: 50px;
+ }
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: gray;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: white;
+  padding-left: 10px;
+}
+
+.social_link h4{
+  color: white;
+}
+
+.footer .social_link ul{
+  top: 90px;
+}
+
+.footer .social_link a{
+  display: inline-block;
+  height: 21px;
+  width: 20px;
+  background-color: #FFF1AF;
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  border-radius: 40%;
+  color: #fffff;
+}
+
+/* .footer .social_link a{
+  margin: 80px;
+} */
